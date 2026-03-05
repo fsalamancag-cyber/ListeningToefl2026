@@ -25,17 +25,14 @@ max-width:900px;
 <body>
 
 <video id="player" autoplay>
-<source src="mlea1.mp4" type="video/mp4">
+<source src="listening2026.mp4" type="video/mp4">
 </video>
 
 <script>
 
 const video = document.getElementById("player");
 
-/* hide controls */
 video.controls = false;
-
-/* prevent rewind */
 
 video.addEventListener("seeking", function(){
 video.currentTime = video.played.end(0);
