@@ -1,38 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 <title>TOEFL Listening</title>
-
-<style>
-body{
-    margin:0;
-    background:black;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
-video{
-    width:100%;
-    max-width:900px;
-}
-</style>
-
 </head>
 
 <body>
 
-<video id="toeflvideo" autoplay muted playsinline>
-    <source src="listening2026.mp4" type="video/mp4">
-</video>
+<h1>TOEFL Listening Practice</h1>
 
-<script>
-window.onload = function() {
-    var v = document.getElementById("toeflvideo");
-    v.play().catch(()=>{});
-}
-</script>
+<video width="720" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 </body>
 </html>
