@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TOEFL Listening</title>
+<style>
+body{
+margin:0;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+video{
+width:100%;
+max-width:900px;
+}
+</style>
+</head>
+
+<body>
+
+<video id="player" autoplay>
+<source src="mlea1.mp4" type="video/mp4">
+</video>
+
+<script>
+const v = document.getElementById("player");
+
+v.controls = false;
+
+v.addEventListener("seeking", function(){
+v.currentTime = v.played.end(0);
+});
+</script>
+
+</body>
+</html>
