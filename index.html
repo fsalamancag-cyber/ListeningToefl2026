@@ -6,17 +6,16 @@
 
 <style>
 body{
-margin:0;
-background:black;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
+    margin:0;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
 }
-
 video{
-width:90%;
-max-width:900px;
+    width:100%;
+    max-width:900px;
 }
 </style>
 
@@ -24,22 +23,10 @@ max-width:900px;
 
 <body>
 
-<video id="player" autoplay>
-<source src="listening2026.mp4" type="video/mp4">
+<video autoplay>
+  <source src="listening2026.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
 
-<script>
-
-const video = document.getElementById("player");
-
-video.controls = false;
-
-video.addEventListener("seeking", function(){
-video.currentTime = video.played.end(0);
-});
-
-</script>
-
 </body>
-</html> 
-
+</html>
